@@ -1,0 +1,176 @@
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .wrapper {
+    padding-block: 32px;
+    padding-inline: 24px;
+    
+  }
+  
+  .container {
+    margin-inline: auto;
+  }
+  
+  .title-section {
+    margin-block: 16px 24px;
+    text-align: center;
+  }
+  
+  /* 
+   Header
+  */
+  header {
+    position: sticky;
+  }
+  
+  header .wrapper {
+    background-color: #2d3e50;
+  
+    color: beige;
+  }
+  
+  .brand-name {
+    font-size: 2rem;
+    text-decoration: inherit;
+    color: inherit;
+  }
+  
+/* 
+* Note Form
+*/
+#note-form {
+  max-width: 600px;
+  margin-inline: auto;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+#note-form .form-group {
+  margin-bottom: 16px;
+}
+
+#note-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#note-form input[type="text"],
+#note-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+
+#note-form button {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 150ms ease-in;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#note-form button:hover {
+  background-color:#F6E96B;
+  color: black;
+}
+
+  /* 
+  * Note list
+  */
+  .note-list {
+    margin-block: 1rem;
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+    column-gap: 24px;
+    row-gap: 32px;
+  }
+  
+  .note-item {
+    border: 1px solid black;
+    background-color: #F6E96B;
+    border-radius: 8px;
+    padding: 16px;
+  
+    overflow: hidden;
+  
+    transition: all 150ms ease-in;
+  }
+  
+  .note-item .note {
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  .note-item .note__body {
+    margin-block: 0.5rem;
+  
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .note-item .note__createdAt {
+    margin-block-start: 1.5rem;
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  #btn_delete {
+    padding: 10px 20px;
+    background-color: #be0000;
+    color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 150ms ease-in;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    display: block;
+  }
+  
+   #btn_delete:hover {
+    background-color:#be0000;
+    color: black;
+  }
+
+  #btn_delete:hover,
+  #btn_delete:focus-visible {
+    scale: 1.05;
+    box-shadow: 0 2px 4px 2px #33333377;
+  }
+  
+  /* 
+   * Footer
+  */
+  footer {
+    color: beige;
+  }
+  
+  footer .wrapper {
+    background-color: #2d3e50;
+  }
+  
+  .foot-information {
+    text-align: center;
+  }
+  

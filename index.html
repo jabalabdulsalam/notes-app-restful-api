@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notes App</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" sizes="48x48" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <header-component></header-component>
+      </header>
+      <div class="wrapper">
+        <div class="container">
+          <section>
+            <section class="title-section">
+              <h3>Tambah Note Baru</h3>
+            </section>
+
+            <form id="note-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="note-title"
+                  name="note-title"
+                  placeholder="Masukkan judul . . ."
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  id="note-body"
+                  name="note-body"
+                  rows="5"
+                  placeholder="Masukkan catatanmu disini . . ."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" id="btn_save">Simpan Note</button>
+              </div>
+            </form>
+            <br />
+            <hr />
+            <section class="title-section">
+              <h3>Daftar Note</h3>
+            </section>
+            <section id="notesList" class="note-list"></section>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <footer-component></footer-component>
+    </footer>
+  </body>
+</html>
